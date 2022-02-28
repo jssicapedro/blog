@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --fundo: #F3F5F7;
+    --textoInicio: #fff;
+    --titulo: #000;
+    --seccao: #fff;
+    --dataConteudo:#717171;
+    --fontFamily: 'Lexend Deca', sans-serif;
+
+    --header: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--header);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--fundo);
+    color: var(--fundo);
+    font-family: var(--fontFamily);
+}
+
+header{
+    background-image: var(--header);
+    height: 20vh;
+}
+
+div.texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1px;
+    height: 70%;
+    color: var(--textoInicio);
+}
+
+div.texto a{
+    text-decoration: underline wavy #3ea1db;
+    color: var(--textoInicio);
+}
+
+div.texto a:hover{
+    color: #3ea1db;
+}
+
+div.pesquisa{
+    text-align: center;
+    background-color: #ffffff20;
+    width: 55%;
+    height: 20%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border-radius: 5px;
+}
+
+div.pesquisa span{
+    padding-left: 2%;
+    font-family: var(--fontFamily);
+}
+
+.espaco_pesquisa{
+    font-size: 0.7em;
+    margin-left: 2%;
+}
+
+main{
+    font-family: var(--fontFamily);
+}
+
+main article{
+    background-color: var(--seccao);
+    color: var(--titulo);
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 0px #00000014;;
+}
+
+article .data{
+    color: var(--dataConteudo);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.icon-heart1{
+    color: #000000;
+    cursor: pointer;
+}
+
+article .conteudo{
+    box-sizing: content-box;
+    margin: 0 2%;
+    color: var(--dataConteudo);
+}
+
+article .conteudo h1{
+    color: var(--titulo);
+}
+
+article .conteudo p{
+    width: 100%;
+    line-height: 30px;
+    margin: 1% 0 2%;
+}
+
