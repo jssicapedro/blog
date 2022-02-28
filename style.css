@@ -104,6 +104,10 @@ article .data{
     cursor: pointer;
 }
 
+.icon-heart1:target{
+    color: red!important;
+}
+
 article .conteudo{
     box-sizing: content-box;
     margin: 0 2%;

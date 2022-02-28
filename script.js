@@ -1,4 +1,4 @@
-const button = document.querySelector('.icon-heart1')
+const button = document.querySelectorAll('.icon-heart')
 button.addEventListener('click', function() {
    
     if(button.style.color = 'black'){
