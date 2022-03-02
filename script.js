@@ -1,14 +1,11 @@
 const likes = document.querySelectorAll('.icon-heart1')
-/* likes.addEventListener('click', function() {
-   
-    if(likes.classList.contains("icon-heart1")){
-        likes.classList.remove("icon-heart1");
-        likes.classList.add("icon-heart");
-    } else {
-        likes.classList.remove("icon-heart");
-        likes.classList.add("icon-heart1");
-    }
-}) */
+
+const title = document.querySelectorAll(".title");
+const news = document.querySelectorAll(".news");
+const search = document.querySelector("input");
+
+
+// likes
 
 for (let like of likes) {
     like.addEventListener("click", function () {
@@ -20,4 +17,15 @@ for (let like of likes) {
         like.classList.add("icon-heart1");
       }
     });
-  }
+}
+
+//busca
+
+search.onkeyup = function () {
+    let searchValue = search.value.toLowerCase();
+    for (let i = 0; i < news.length; i++) {
+      let titleContain = title[i].innerText;
+      let results = titleContain.toLowerCase().indexOf(searchValue) >= 0;
+      news[i].style.display = results ? "" : "none";
+    }
+  };

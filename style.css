@@ -52,7 +52,7 @@ div.texto a{
 }
 
 div.texto a:hover{
-    color: #3ea1db;
+    transform: scale(1.2);
 }
 
 div.pesquisa{
@@ -64,6 +64,22 @@ div.pesquisa{
     margin: auto;
     align-items: center;
     border-radius: 5px;
+}
+
+div.pesquisa input{
+    width: 90%;
+    height: 100%;
+    padding-left: 2%;
+    border: none;
+    background-color: transparent;
+}
+
+div.pesquisa input[placeholder]{
+    color: #fff;
+}
+
+div.pesquisa input:focus{
+    border: none;
 }
 
 div.pesquisa span{
