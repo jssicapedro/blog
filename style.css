@@ -100,12 +100,13 @@ article .data{
 }
 
 .icon-heart1{
-    color: #000000;
+    color: #000;
     cursor: pointer;
 }
 
-.icon-heart1:target{
-    color: red!important;
+.icon-heart{
+    color: #574ae8;
+    cursor: pointer;
 }
 
 article .conteudo{
