@@ -148,3 +148,12 @@ article .conteudo p{
     margin: 1% 0 2%;
 }
 
+footer{
+    height: 5vh;
+    background: var(--header);
+    display: flex;
+}
+
+footer p{
+    margin: auto;
+}
